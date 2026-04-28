@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bpmf+Huninn&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos' Essentials</title>
+    <style>
+        body{
+  font-family: "Bpmf Huninn", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+header{
+  background-color: #f6c492;
+  color: white;
+  justify-content: space-between;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+a{
+  text-decoration: none;
+}
+#srchbx{
+  width: 200px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#srchbttn{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn2{
+  color: black;
+  background-color: white;
+  padding: 18px;
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn2:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn3{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn3:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn4{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn4:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn5{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn5:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn6{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn6:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn7{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn7:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn8{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn8:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn9{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn9:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn10{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn10:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn11{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn11:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn12{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn12:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn13{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn13:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn14{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn14:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn15{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn15:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn16{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn16:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn17{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn17:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn18{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn18:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn19{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn19:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn20{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn20:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn21{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn21:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn22{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn22:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn23{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn23:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn24{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn24:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn25{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn25:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn26{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn26:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn27{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn27:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#drpdwn{
+  margin-top: 5px;
+  display: none;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px;
+  z-index: 1;
+}
+#lnkfpdrp:hover #lnkfp{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#drpdwn a{
+  color: #ffa246;
+}
+#lnkfpdrp{
+  position: relative;
+}
+#lnkfpdrp #drpdwn{
+  width: 0px;
+}
+#lnkfpdrp:hover #drpdwn{
+  display: grid;
+  width: 141px;
+}
+#expbttn{
+  color: black;
+  background-color: white;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 50px;
+  border: 1px;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  margin-right: 350px; 
+  margin-left: 60px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#expbttn:hover{
+  background-color: #ffa246;
+  color: white;
+  border-radius: 50px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#dvfrnt{
+  background-color: #f6c492;
+  width: 100%;
+  height: 600px;
+}
+#lnkbr{
+  margin-top: 10px;
+  width: 450px;
+  justify-content: space-between;
+}
+#lnkfp{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: border-bottom 1s, color 1.2s, background-color 1s, padding 1s, box-shadow 1s;
+}
+#lnkfp:hover{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#lnkfp2{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: border-bottom 1s, color 1.2s, background-color 1s, padding 1s, box-shadow 1s;
+}
+#lnkfp2:hover{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#lnkfp3{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: border-bottom 1s, color 1.2s, background-color 1s, padding 1s, box-shadow 1s;
+}
+#lnkfp3:hover{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#lnkfp4{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: border-bottom 1s, color 1.2s, background-color 1s, padding 1s, box-shadow 1s;
+}
+#lnkfp4:hover{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#frntimg{
+    width: 500px;
+    height: 500px;
+    margin-left: -100px;
+    transition: transform 1s;
+}
+#frntimg:hover{
+    transform: scale(1.1);
+}
+#frntimg2{
+    margin-top: -180px;
+    width: 400px;
+    height: 400px;
+    background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-2.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#frntimg3{
+    margin-left: -170px;
+    margin-top: 200px;
+    width: 400px;
+    height: 400px;
+    background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-3.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#frntimg4{
+    margin-left: 450px;
+    margin-top: -300px;
+    width: 450px;
+    height: 300px;
+    background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-5.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#flshdls{
+  padding-top: 20px;
+  background-color: #ffefde;
+  width: 100%;
+  height: 1000px;
+  border-top: 10px solid #d4b28f;
+  background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-8.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dvmddl{
+  padding-top: 20px;
+  background-color: #ffefde;
+  width: 100%;
+  height: 900px;
+  background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-4.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dvmddl2{
+  padding-top: 20px;
+  background-color: #ffd4aa;
+  width: 100%;
+  height: 1100px;
+  border-top: 10px solid #ffefde;
+  border-bottom: 10px solid #ffefde;
+  background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-7.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dvmddl3{
+  padding-top: 20px;
+  background-color: #ffefde;
+  width: 100%;
+  height: 850px;
+  background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-4.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dvmddl4{
+  padding-top: 20px;
+  background-color: #ffd4aa;
+  width: 100%;
+  height: 1100px;
+  border-top: 10px solid #ffefde;
+  border-bottom: 10px solid #ffefde;
+  background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-7.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dvmddlttl{
+  background-color: #ffcf9e;
+  width: 100%;
+  height: 260px;
+  border-top: 10px solid #f6c492;
+  border-bottom: 10px solid #f6c492;
+  background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-7.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  transition: transform 1s;
+}
+.card:hover{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  transform: scale(1.1);
+}
+#ctlg{
+  margin: auto;
+}
+#ctlg2{
+  margin: auto;
+}
+#ctlg3{
+  margin: auto;
+}
+#ctlg4{
+  margin: auto;
+}
+#ctlg5{
+  margin: auto;
+}
+#hvrtxt{
+transition: transform 1s;
+}
+#hvrtxt:hover{
+transform: scale(1.1);
+}
+#hvrtxt2{
+transition: transform 1s;
+}
+#hvrtxt2:hover{
+transform: scale(1.1);
+}
+#hvrtxt3{
+transition: transform 1s;
+}
+#hvrtxt3:hover{
+transform: scale(1.1);
+}
+#hvrtxt4{
+transition: transform 1s;
+}
+#hvrtxt4:hover{
+transform: scale(1.1);
+}
+#hvrtxt5{
+transition: transform 1s;
+}
+#hvrtxt5:hover{
+transform: scale(1.1);
+}
+footer{
+  padding: 15px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes pulseAnimation {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+#hvrtxtflsh {
+  animation-name: pulseAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+hr{
+  border: 2px solid grey;
+}
+#mre{
+  margin-left: 250px;
+  margin-top: 40px;
+  width: 1000px;
+}
+    </style>
+</head>
+<body>
+     <header class="py-2 ps-4 d-flex">
+        <div>
+        <h1 style="margin-bottom: -10px;">Marcos' Essentials</h1>
+        <hr>
+        </div>
+        <div id="lnkbr" class="d-flex"><div><p style="font-size: 24px;"><a href="#" id="lnkfp"> Home </a></p></div><div id="lnkfpdrp"><p style="font-size: 24px;"><a href="#dvmddlttl" id="lnkfp2">Products</a></p>
+    <div id="drpdwn">
+      <a href="#dvmddl"><p style="font-size: 16px;">Furniture</p></a>
+      <a href="#dvmddl2"><p style="font-size: 16px;">Appliances</p></a>
+      <a href="#dvmddl3"><p style="font-size: 16px;">Clothing</p></a>
+      <a href="#dvmddl4"><p style="font-size: 16px;">Gadgets & Computers</p></a>
+      <a href="#mre" style="color: white;" class="btn btn-secondary btn-block" id="mre2">More<i class="spinner-border spinner-border-sm"></i></a>
+          </div></div><div><p style="font-size: 24px;"><a href="#flshdls" id="lnkfp3"> Flash deals </a></p></div><p style="font-size: 24px;"><a href="aboutus.html" id="lnkfp4"> About </a></p></div>
+        <div class='d-flex'>
+          <button id="srchbttn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" id="srchbx" placeholder="Search...">
+        <a href="shopcart.html" id="srchbttn2"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </header>
+      <div id="dvfrnt">
+        <div class="d-flex" style="color: white;">
+        <div>
+        <h1 style="font-size: 57px; margin-top: 125px; margin-right: 350px; margin-left: 50px;">Marcos' Essentials</h1>
+        <p style="font-size: 20px; margin-top: -10px; margin-right: 350px; margin-left: 60px;">Looking for something "essential"? Here at Marcos' Essentials, we got everything you need! Feel free to explore our catalog.</p> 
+        <a href="#dvmddlttl" id="expbttn" class="btn"><p style="font-size: 24px;">Explore Catalog</p></a>
+          <div id="frntimg2"></div>
+          <div id="frntimg4"></div>
+        </div>
+        <img id="frntimg" src="https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-1.png?raw=true" alt="Shopping Cart">
+        <div id="frntimg3"></div>
+        </div>
+      </div>
+      <div id="flshdls">
+        <h1 style="font-size: 100px; text-align: center; margin-top: 50px;" id="hvrtxtflsh">Fl<i class="fa-solid fa-bolt" style="font-size: 60px;"></i>sh deals</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 container" id="ctlg">
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/files/mandaue-foam-all-wood-box-darby-brown-single-36x75-inches-1151797923.png?v=1768302632&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">All Wood Box</p>
+           <p>The All Wood Box provides a firm and stable base with a thin foam layer on top for added comfort and smoother support under the mattress.</p>
+           <div class="d-flex"><p>₱6,320 </p><p style="color: red;text-decoration: line-through;margin-left: 5px;">₱7,900</p><p style="color: red;margin-left: 5px;">20% off</p></div>
+           <button type="button" class="btn" id="srchbttn3" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+  <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/files/mandaue-foam-cole-ceramic-non-stick-frying-pan-20-cm-1151815277.png?v=1760814116&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Cole Ceramic Non-stick Frying Pan</p>
+           <p>Upgrade your kitchen with the COLE series—modern and durable design, featuring a ceramic coating for non-stick performance and a soft-touch handle.</p>
+           <div class="d-flex"><p>₱399 </p><p style="color: red;text-decoration: line-through;margin-left: 5px;">₱570</p><p style="color: red;margin-left: 5px;">30% off</p></div>
+           <button type="button" class="btn" id="srchbttn4" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/files/mandaue-foam-soli-bath-rug-blue-1208086602.jpg?v=1768300387&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Soli Bath Rug</p>
+           <p>SOLI bath rugs – soft under your feet, easy to care for. Dries quickly and comes in neutral colors that fit any bathroom.</p>
+           <div class="d-flex"><p>₱178 </p><p style="color: red;text-decoration: line-through;margin-left: 5px;">₱255</p><p style="color: red;margin-left: 5px;">30% off</p></div>
+           <button type="button" class="btn" id="srchbttn5" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/files/mandaue-foam-waniya-printed-canvas-wall-art-1219287390.jpg?v=1770185288&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Waniya Printed Canvas Wall Art</p>
+           <p>A vibrant botanical artwork featuring large tropical leaves outlined in shimmering gold.</p>
+           <div class="d-flex"><p>₱196 </p><p style="color: red;text-decoration: line-through;margin-left: 5px;">₱280</p><p style="color: red;margin-left: 5px;">30% off</p></div>
+           <button type="button" class="btn" id="srchbttn6" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/files/mandaue-foam-alika-semi-blackout-curtain-1216494269.png?v=1768884914&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Alika Semi Blackout Curtain</p>
+           <p>Enjoy a soft, diffused glow while maintaining privacy.
+These stylish, high-quality curtains provide the perfect balance of light control and privacy.</p>
+           <div class="d-flex"><p>₱511 </p><p style="color: red;text-decoration: line-through;margin-left: 5px;">₱730</p><p style="color: red;margin-left: 5px;">30% off</p></div>
+           <button type="button" class="btn" id="srchbttn7" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+</div>
+        <p style="font-size: 24px;margin-left: 100px; margin-top: 30px;">You have until: April 28, 2056</p>
+      </div>
+      <div id="dvmddlttl">
+        <h1 style="font-size: 100px; text-align: center; margin-top: 60px;color: white;" id="hvrtxt">Featured Catalog</h1>
+      </div>
+      <div id="dvmddl">
+      <h1 style="font-size: 80px; text-align: center;margin-bottom: 10px; margin-top: 60px;" id="hvrtxt2">Furniture</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 container" id="ctlg2">
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/files/mandaue-foam-livia-glass-coffee-table-1151828398.png?v=1761007309&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Livia Glass Coffee Table</p>
+           <p>This coffee table will complement any living room furnishings and offers elegance and durability while also giving essential storage space.</p>
+           <p>₱3,185</p>
+           <button type="button" class="btn" id="srchbttn8" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+  <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/products/mandaue-foam-spencer-bed-semi-double-bed-48x75-1151796845.png?v=1761226402&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Spencer Bed</p>
+           <p>Comes with a stylish upholstery and metal legs, adding a touch of luxury to your bedroom and which provides comfort , style and warmth.
+Note: Bed frame only (Mattress and beddings not included)</p>
+           <p>₱16,100</p>
+           <button type="button" class="btn" id="srchbttn9" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/files/mandaue-foam-adair-2-seater-sofa-cocoa-cement-grey-1151812578.png?v=1768291679&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Adair 2-Seater Sofa</p>
+           <p>Available in two colors of fabric and wood, Cocoa + Cement Gray and Teak+ Aquamarine Blue. This 2 seater sofa features tufted upholstery and a sturdy rubberwood frame.</p>
+           <p>₱10,640</p>
+           <button type="button" class="btn" id="srchbttn10" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/files/mandaue-foam-gray-office-desk-walnut-1151826593.png?v=1768287675&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Gray Office Desk</p>
+           <p>Available in 2 colors Oak, and Walnut. This desk has three built-in drawers on the right side and one under the top for extra storage of keyboards, remotes, pens, and other items.</p>
+           <p>₱3,920</p>
+           <button type="button" class="btn" id="srchbttn11" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://mandauefoam.ph/cdn/shop/files/mandaue-foam-nery-sliding-shoe-cabinet-white-1151826988.png?v=1760984761&width=800" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Nery Sliding Shoe Cabinet</p>
+           <p>With 4 shelves and 2 vents inside.
+Able to accommodate up to 12 pairs of adults and 16 pairs of shoes for kids.</p>
+           <p>₱4,480</p>
+           <button type="button" class="btn" id="srchbttn12" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+</div>
+        </div>
+<div id="dvmddl2">
+      <h1 style="font-size: 80px; text-align: center;margin-bottom: 10px;margin-top: 60px;" id="hvrtxt3">Appliances</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 container" id="ctlg3">
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://www.smappliance.com/cdn/shop/products/MS23K3515AS-EU_001_Front_Silver_1000x.png?v=1670830934" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Samsung 23L Microwave Oven</p>
+           <p>General Features:
+Oven Capacity: 23L,
+Quick Defrost,
+Touch Control,
+Ceramic Inside,
+ECO Mode,
+Deodorization</p>
+           <p>₱5,995</p>
+           <button type="button" class="btn" id="srchbttn13" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+  <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://www.smappliance.com/cdn/shop/files/F-Next8_GC-L22FFLQB_PY_Front_1000x.jpg?v=1727691481" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">LG French Door Inverter Ref</p>
+           <p>Product Overview:
+20.8 Cubic Feet,
+No Frost,
+French Door Refrigerator With ICE And Water Dispenser,
+Flat Door Finish,
+Door Cooling,
+Smart Inverter,
+Linear Cooling,
+Hygiene Fresh,
+Metal Fresh</p>
+           <p>₱83,995</p>
+           <button type="button" class="btn" id="srchbttn14" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://www.smappliance.com/cdn/shop/files/TefalRK364A65_1000x.jpg?v=1729648460" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Tefal Everforce Mechanical Rice Cooker</p>
+           <p>General Specifications:
+220-240V~,
+Color: Black/Silver Gray,
+Net Weight (kg): 3.2kg,
+Gross Weight (packed): 4kg,
+Net Dimensions (WxHxD) - mm & inches: 285 x 260 x 302 / 11.22 x 10.24 x 11.89inches,
+Gross Dimensions (WxHxD) - mm & inches: 315 x 315 x 315mm / 12.40 x 12.40 x 12.40inches</p>
+           <p>₱4,636</p>
+           <button type="button" class="btn" id="srchbttn15" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://www.smappliance.com/cdn/shop/products/10165278_1000x.jpg?v=1620835186" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Imarflex Induction Cooker</p>
+           <p>Product Overview:
+Slim Type 38 mm,
+24 cm Cookware,
+5 Preset Function,
+Touch Sensitive Control Panel,
+High Energy Efficiency,
+Auto Sense on Pot,
+Auto-Off Feature,
+Overload Protection,
+Up to 24 Hours Timer ,
+Child-Lock Feature,
+1500 Watts Power (Pot Not Included)</p>
+           <p>₱2,970</p>
+           <button type="button" class="btn" id="srchbttn16" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://www.smappliance.com/cdn/shop/files/CHFF-1801MX-CHFF-2001MX_1000x.jpg?v=1776736705" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Camel Floor Fan 18"</p>
+           <p>Product Overview:
+Electric Floor Fan 18',
+Powerful Plastic 5 Blade leaf design,
+Wide air coverage w/ strong wind,
+Heavy duty big motor performance,
+High speed airflow settings,
+Safety fuse protection, Wide oscillation,
+Tilting fan head, durable & stable construction</p>
+           <p>₱2,895</p>
+           <button type="button" class="btn" id="srchbttn17" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+</div>
+        </div>
+      <div id="dvmddl3">
+      <h1 style="font-size: 80px; text-align: center;margin-bottom: 10px;margin-top: 60px;" id="hvrtxt4">Clothing</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 container" id="ctlg4">
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://image.uniqlo.com/UQ/ST3/ph/imagesgoods/483970/item/phgoods_68_483970_3x4.jpg?width=369" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">DRY-EX T-Shirt</p>
+           <p>Made with Recycled Materials, Comes in Blue and Grey.</p>
+           <p>₱790</p>
+           <button type="button" class="btn" id="srchbttn18" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+  <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://image.uniqlo.com/UQ/ST3/ph/imagesgoods/471808/item/phgoods_17_471808_3x4.jpg?width=369" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Sweat Oversized Pullover Hoodie</p>
+           <p>Comes in Grey, Black, Red, Beige, Navy.</p>
+           <p>₱1,990</p>
+           <button type="button" class="btn" id="srchbttn19" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://image.uniqlo.com/UQ/ST3/ph/imagesgoods/484080/item/phgoods_07_484080_3x4.jpg?width=369" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Washed Cotton Crew Neck Long Sleeve T-Shirt</p>
+           <p>Comes in White, Grey, Black, Purple.</p>
+           <p>₱790</p>
+           <button type="button" class="btn" id="srchbttn20" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://image.uniqlo.com/UQ/ST3/ph/imagesgoods/482522/item/phgoods_57_482522_3x4.jpg?width=369" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">AIRism Cotton Crew Neck T-Shirt</p>
+           <p>Comes in White, Grey, Black, Olive, Blue, Navy</p>
+           <p>₱590</p>
+           <button type="button" class="btn" id="srchbttn21" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://image.uniqlo.com/UQ/ST3/ph/imagesgoods/484855/sub/phgoods_484855_sub3_3x4.jpg?width=369" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Sweat Straight Pants</p>
+           <p>Comes in Grey, Black, Red, Natural, Navy.</p>
+           <p>₱1,990</p>
+           <button type="button" class="btn" id="srchbttn22" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+</div>
+        </div>
+      <div id="dvmddl4">
+      <h1 style="font-size: 80px; text-align: center;margin-bottom: 10px;margin-top: 60px;" id="hvrtxt5">Gadgets & Computers</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 container" id="ctlg5">
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://urbangadgets.ph/cdn/shop/files/PH__DJI_Flip_All-in-One_Vlog_Camera_Drone.jpg?v=1769405056&width=1946" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">DJI Flip Drone</p>
+           <p>The DJI Flip Drone may be small, but it packs a powerful punch when it comes to aerial content creation.
+DJI Flip features a stunning compact design with exceptional imaging capabilities. It supports palm takeoff without a remote controller, allowing you to capture moments on the go easier than ever before.</p>
+           <p>₱32,890</p>
+           <button type="button" class="btn" id="srchbttn23" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+  <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://urbangadgets.ph/cdn/shop/files/OPEN_BOX_77.png?v=1769392632&width=1380" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Yaber L2 Plus HD Projector</p>
+           <p>The Yaber L2 Plus has HD native 720p projector with upgraded brightness and dual stereo speakers—perfect for movies, games, and small-space setups.
+Designed for stunning Full HD visuals and immersive audio, this projector delivers vivid colors, sharp details, and seamless streaming. </p>
+           <p>₱14,990</p>
+           <button type="button" class="btn" id="srchbttn24" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://www.1stmegasaver.com.ph/wp-content/uploads/2025/09/Acer-Apire-Lite-AL15-41P-R16X-1.png" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Acer Apire Lite AL15-41P-R16X,</p>
+           <p>AMD Ryzen 7 5700U & Radeon Graphics,
+512GB NVMe SSD,
+8GB DDR4 RAM</p>
+           <p>₱34,350</p>
+           <button type="button" class="btn" id="srchbttn25" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://www.1stmegasaver.com.ph/wp-content/uploads/2025/09/iPhone-15-Blue.png" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Apple iPhone 15</p>
+           <p>A16 Bionic,
+128GB</p>
+           <p>₱42,985</p>
+           <button type="button" class="btn" id="srchbttn26" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+    <div class="col">
+       <div class="card">
+          <img class="card-img-top" src="https://www.1stmegasaver.com.ph/wp-content/uploads/2025/12/Samsung-Galaxy-Tab-A9-SM-X115-4GB64GB.png" alt="">
+         <div class="card-body">
+           <p style="font-size: 24px;" class="card-title">Samsung Galaxy Tab A9 SM-X115</p>
+           <p>8.7 Inch,
+4GB of RAM,
+64GB of storage</p>
+           <p>₱9,899</p>
+           <button type="button" class="btn" id="srchbttn27" style="padding: 15px;">
+             <i class="fa-solid fa-cart-plus"></i>
+           </button>
+         </div>
+       </div>
+    </div>
+</div>
+        <button type="button" class="btn btn-secondary btn-block" id="mre">More <i class="spinner-border spinner-border-sm"></i></button>
+        </div>
+<footer>
+  <p style="font-size: 16px;"> © 2026 De Lara, Marcos, Cruz. All Rights Reserved.</p>
+</footer>
+<script>
+    if (!localStorage.getItem("cart")) {
+  localStorage.setItem("cart", JSON.stringify([]));
+}
+const buttons = document.querySelectorAll(".card button");
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const card = button.closest(".card");
+    const name = card.querySelector(".card-title").innerText;
+    const price = card.querySelector("p").innerText;
+    const img = card.querySelector("img").src;
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    cart.push({ name, price, img });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(name + " added to cart!");
+  });
+});
+</script>
+</body>
+</html>

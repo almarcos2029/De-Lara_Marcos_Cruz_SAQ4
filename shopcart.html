@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bpmf+Huninn&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        body{
+  font-family: "Bpmf Huninn", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+header{
+  background-color: #f6c492;
+  color: white;
+  justify-content: space-between;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+a{
+  text-decoration: none;
+}
+#srchbx{
+  width: 200px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#srchbttn{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttn2{
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttn2:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 57px;
+  border-radius: 10px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#srchbttnordr{
+  width: 150px;
+  height: 57px;
+  border-radius: 10px;
+  border: 3px solid lightgrey;
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+#srchbttnordr:hover{
+  background-color: #ffa246;
+  color: white;
+  width: 150px;
+  border-radius: 10px;
+  border: 3px solid #ffa246;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#drpdwn{
+  margin-top: 5px;
+  display: none;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px;
+  z-index: 1;
+}
+#lnkfpdrp:hover #lnkfp{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#drpdwn a{
+  color: #ffa246;
+}
+#lnkfpdrp{
+  position: relative;
+}
+#lnkfpdrp #drpdwn{
+  min-width: 0px;
+  transition: width 1s;
+}
+#lnkfpdrp:hover #drpdwn{
+  display: grid;
+  width: 141px;
+}
+#expbttn{
+  padding: 10px;
+  padding-top: 15px;
+  border-radius: 50px;
+  border: 1px;
+}
+#expbttn a{
+  color: black;
+  transition: color 0.2s;
+}
+#expbttn:hover{
+  background-color: #ffa246;
+  color: white;
+  border-radius: 50px;
+  border: 1px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+#expbttn:hover a{
+  color: white;
+}
+#dvfrnt{ 
+  background-color: #f6c492;
+  width: 100%;
+  height: 525px;
+  padding-top: 40px;
+  border-top: 10px solid #ffefde;
+}
+#dvfrnt2{
+  background-color: #f6c492;
+  width: 100%;
+  height: 570px;
+  padding-top: 30px;
+  background-image: url("https://github.com/almarcos2029/picsSAQ4/blob/main/SAQ4-4.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#lnkbr{
+  margin-top: 10px;
+  width: 450px;
+  justify-content: space-between;
+}
+#lnkfp{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: border-bottom 1s, color 1.2s, background-color 1s, padding 1s, box-shadow 1s;
+}
+#lnkfp:hover{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#lnkfp2{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: border-bottom 1s, color 1.2s, background-color 1s, padding 1s, box-shadow 1s;
+}
+#lnkfp2:hover{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#lnkfp3{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: border-bottom 1s, color 1.2s, background-color 1s, padding 1s, box-shadow 1s;
+}
+#lnkfp3:hover{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#lnkfp4{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: border-bottom 1s, color 1.2s, background-color 1s, padding 1s, box-shadow 1s;
+}
+#lnkfp4:hover{
+  color: black;
+  border-bottom: 8px black solid;
+  padding: 20px;
+  box-shadow: 0px 4px white;
+  background-color: #f6b092;
+}
+#shpbx{
+  background-color: white;
+  border-radius: 20px;
+  width: 1000px;
+  height: 450px;
+  padding: 20px;
+}
+#lstbx{
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+}
+#name{
+  width: 445px;
+  height: 57px;
+  border-radius: 10px;
+  border: 3px solid lightgrey;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#email{
+  width: 445px;
+  height: 57px;
+  border-radius: 10px;
+  border: 3px solid lightgrey;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#address{
+  width: 900px;
+  height: 57px;
+  border-radius: 10px;
+  border: 3px solid lightgrey;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#hvrtxt{
+transition: transform 1s;
+}
+#hvrtxt:hover{
+transform: scale(1.1);
+}
+#hvrtxt2{
+transition: transform 1s;
+}
+#hvrtxt2:hover{
+transform: scale(1.1);
+}
+#hvrtxt3{
+transition: transform 1s;
+}
+#hvrtxt3:hover{
+transform: scale(1.1);
+}
+#hvrtxt4{
+transition: transform 1s;
+}
+#hvrtxt4:hover{
+transform: scale(1.1);
+}
+#hvrtxt5{
+transition: transform 1s;
+}
+#hvrtxt5:hover{
+transform: scale(1.1);
+}
+hr{
+  border: 2px solid grey;
+}
+footer{
+  margin-top: 30px;
+  padding: 15px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    </style>
+</head>
+<body>
+    <header class="py-2 ps-4 d-flex">
+        <div>
+        <h1 style="margin-bottom: -10px;">Marcos' Essentials<i class="fa-solid fa-star"></i></h1>
+        <hr>
+        </div>
+        <div id="lnkbr" class="d-flex"><div><p style="font-size: 24px;"><a href="index.html" id="lnkfp"> Home </a></p></div><div id="lnkfpdrp"><p style="font-size: 24px;"><a href="#dvmddlttl" id="lnkfp2">Products</a></p>
+    <div id="drpdwn">
+      <a href="index.html#dvmddl"><p style="font-size: 16px;">Furniture</p></a>
+      <a href="index.html#dvmddl2"><p style="font-size: 16px;">Appliances</p></a>
+      <a href="index.html#dvmddl3"><p style="font-size: 16px;">Clothing</p></a>
+      <a href="index.html#dvmddl4"><p style="font-size: 16px;">Gadgets & Computers</p></a>
+      <a href="index.html#mre" style="color: white;" class="btn btn-secondary btn-block" id="mre2">More <div class="spinner-border spinner-border-sm"></div></a>
+          </div></div><div><p style="font-size: 24px;"><a href="index.html#flshdls" id="lnkfp3"> Flash deals </a></p></div><p style="font-size: 24px;"><a href="aboutus.html" id="lnkfp4"> About </a></p></div>
+        <div class='d-flex'>
+          <button id="srchbttn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" id="srchbx" placeholder="Search...">
+        <button id="srchbttn2"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </header>
+      <div id="dvfrnt">
+        <div id="dvfrnt2">
+        <div class="d-flex container" style="gap: 20px;">
+        <div class="container" style="color: black;" id="lstbx">
+          <h1 id="hvrtxt" style="text-align: center;">Cart <i class="fa-solid fa-cart-shopping"></i></h1>
+          <p style="font-size: 24px;">Total Price:</p>
+          <hr>
+        </div>
+        <div class="" style="color: black;" id="shpbx">
+          <h1 id="hvrtxt2" style="text-align: center;">Delivery Details <i class="fa-solid fa-circle-info"></i></h1>
+         <hr>
+          <form id="checkoutForm" action="http://52.74.133.173/cs3/checkout.php" method="POST">
+            <div class="mb-3 d-flex">
+              <div>
+        <label for="name" class="form-label" style="font-size: 24px;" id="hvrtxt3">Name <i class="fa-solid fa-user"></i></label>
+        <input id="name" name="name" type="text" class="form-control" placeholder="Last Name, First Name, M.I.">
+              </div>
+              <div>
+        <label for="email" class="form-label" style="font-size: 24px;" id="hvrtxt4">Email <i class="fa-solid fa-at"></i></label>
+        <input id="email" name="email" type="text" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div>
+        <label for="address" class="form-label" style="font-size: 24px;" id="hvrtxt5">Address <i class="fa-solid fa-house"></i></label>
+        <input id="address" name="address" type="text" class="form-control" placeholder="House number, Barangay, Municipality/City, Province, Country">
+            </div>
+        <input type="hidden" name="cart" id="cartInput">
+        <button type="button" class="btn" id="srchbttnordr" onclick="submitCart()" style="padding: 15px;">Place Order</button>
+          </form>
+          </div>
+          </div>
+          </div>
+      </div>
+<footer>
+  <p style="font-size: 16px;"> © 2026 De Lara, Marcos, Cruz. All Rights Reserved.</p>
+</footer>
+    <script>
+        function getPrice(value) {
+  if (typeof value === "number") return value;
+  if (!value) return 0;
+  const cleaned = String(value).replace(/[^\d]/g, "");
+  return Number(cleaned) || 0;
+}
+
+function loadCart() {
+  const container = document.getElementById("lstbx");
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  container.innerHTML = `
+    <h1 style="text-align:center;">
+      Cart <i class="fa-solid fa-cart-shopping"></i>
+    </h1>
+    <div id="cart-items"></div>
+    <h4 id="total">Total Price: ₱0</h4>
+    <hr>
+  `;
+  const itemsContainer = document.getElementById("cart-items");
+  if (cart.length === 0) {
+    itemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+    return;
+  }
+  let total = 0;
+  cart.forEach((item, index) => {
+    const price = getPrice(item.price);
+    total += price;
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <h5>${item.name || "Item"}</h5>
+      <p>₱${price.toLocaleString()}</p>
+      <button onclick="removeItem(${index})"
+        style="padding:8px; border:1px solid gray;">
+        Remove
+      </button>
+      <hr>
+    `;
+    itemsContainer.appendChild(div);
+  });
+
+  document.getElementById("total").innerText =
+    "Total Price: ₱" + total.toLocaleString();
+}
+
+function removeItem(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  loadCart();
+}
+
+function submitCart() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  document.getElementById("cartInput").value =
+    JSON.stringify(cart);
+
+  document.getElementById("checkoutForm").submit();
+}
+
+loadCart();
+    </script>
+</body>
+</html>
